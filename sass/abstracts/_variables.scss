@@ -1,0 +1,20 @@
+:root {
+    --color-rose-800: #7A284E;
+    --color-rose-50: #FFF7FB;
+    --color-stone-900: #312E2C;
+    --color-stone-600: #5F564D;
+    --color-stone-150: #E3DDD7;
+    --color-stone-100: #F3E5D7;
+    --color-brown-800: #854632;
+    --color-white: #FFF;
+
+    --ff-heading: "Young Serif", serif;
+    --ff-body: "Outfit", sans-serif;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+}
+
+// breakpoints
+$bp-tablet: 48em; // 768px;
+$bp-desktop: 90em; // 1440px;
