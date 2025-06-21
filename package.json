@@ -1,0 +1,15 @@
+{
+  "name": "recipe-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/style.scss css/style.css -w",
+    "compile:sass": "sass sass/style.scss css/style.css"
+  },
+  "author": "teempe",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
