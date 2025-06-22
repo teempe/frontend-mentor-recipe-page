@@ -1,0 +1,38 @@
+@use '../base/typography';
+
+.nutrition-table {
+    border-collapse: collapse;
+
+    tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.6rem;
+        border-bottom: 1px solid var(--color-stone-150);
+    }
+
+    & td {
+        padding-top: 1.15rem;
+        padding-bottom: 1.15rem;
+    }
+
+    & tr:first-child > td {
+        padding-top: 0rem;
+    }
+
+    & tr:last-child {
+        border: none;
+
+        & > td {
+        padding-bottom: 0rem;
+        }
+    }
+    
+    & tr > td:nth-child(1) {
+        padding-left: 3.2rem;
+    }
+
+    & tr > td:nth-child(2) {
+        color: var(--color-brown-800);
+        @include typography.text-body-bold();
+    }
+}

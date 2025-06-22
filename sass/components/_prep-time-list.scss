@@ -1,0 +1,25 @@
+@use '../base/typography';
+
+.prep-time-list {
+    display: grid;
+    row-gap: 0.8rem;
+
+    & > li {
+        list-style: none;
+        padding-left: 0.8rem;
+        display: flex;
+        column-gap: 1.6rem;
+        align-items: center;
+
+        &::before {
+            content: "•";
+            @include typography.text-body-bold();
+            color: var(--color-brown-800);
+        }
+
+        & > strong {
+            @include typography.text-body-bold();
+            color: var(--color-stone-600);
+        }
+    }
+}
