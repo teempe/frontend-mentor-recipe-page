@@ -15,6 +15,7 @@
             content: "•";
             @include typography.text-body-bold();
             color: var(--color-brown-800);
+            width: 1.6rem;
         }
 
         & > strong {
