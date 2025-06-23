@@ -34,9 +34,9 @@
     @include heading();
     font-size: 3.6rem;
 
-    // @media only screen and (min-width: variables.$bp-tablet) {
-    //     font-size: 4rem;
-    // }
+    @media only screen and (min-width: variables.$bp-tablet) {
+        font-size: 4rem;
+    }
 }
 
 @mixin heading-md {

@@ -1,17 +1,39 @@
 @use '../base/typography';
+@use '../abstracts/variables';
 
 .recipe-card {
     background-color: var(--color-white);
-    width: 37.5rem;
+    width: clamp(37.5rem, 100vw, 61.6rem);
 
-    &__image {
-        width: 100%;
+    @media only screen and (min-width: variables.$bp-tablet) {
+        width: clamp(61.6rem, 70vw, 73.6rem);
+        border-radius: 2.4rem;
+    }
+
+    &__illustration {
+        & > img {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: variables.$bp-tablet) {
+            padding: 0rem 4rem;
+            padding-top: 4rem;
+
+            & > img {
+                height: 30rem;
+                border-radius: 1.2rem;
+            }
+        }
     }
 
     &__content {
         padding: 4rem 3.2rem;
         display: grid;
         row-gap: 3.2rem;
+
+        @media only screen and (min-width: variables.$bp-tablet) {
+            padding: 4rem 4rem;
+        }
     }
 
     &__header {
